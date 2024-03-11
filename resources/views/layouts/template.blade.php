@@ -86,7 +86,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#"
+                            <a href="{{route('kategori.index')}}"
                                 class="nav-link {{ ($title==='Kategori') ? 'active':'' }}">
                                 <i class="nav-icon fas fa-th-large"></i>
                                 <p>
@@ -120,7 +120,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link {{ ($title==='Customer')?'active':''}}">
+                            <a href="{{route('pelanggan.index')}}" class="nav-link {{ ($title==='Customer')?'active':''}}">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Customer
