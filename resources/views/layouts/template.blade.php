@@ -98,10 +98,10 @@
                with font-awesome or any other icon font library -->
 
                         <li class="nav-item">
-                            <a href="/" class="nav-link {{ ($title==='Dashboard')?'active':'' }}">
+                            <a href="penjualan" target="_blank" class="nav-link {{ ($title==='Penjualan')?'active':'' }}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Dashboard
+                                    penjualan
 
                                 </p>
                             </a>
@@ -141,7 +141,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('pengguna.index')}}" class="nav-link {{ ($title==='Customer')?'active':''}}">
+                            <a href="{{route('pelanggan.index')}}" class="nav-link {{ ($title==='Customer')?'active':''}}">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Customer
@@ -149,7 +149,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link {{ ($title==='Users')?'active':''}}">
+                            <a href="{{route('pengguna.index')}}" class="nav-link {{ ($title==='Users')?'active':''}}">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Users

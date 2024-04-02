@@ -9,6 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Models\Customer;
 use App\Models\User;
 use GuzzleHttp\Promise\Create;
+use App\Http\Controllers\CetakController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,6 @@ route::resource('pengguna',UserController::class)->except('destroy','Create','sh
 Route::get('login',[LoginController::class,'loginView'])->name('login');
 Route::post('login',[LoginController::class,'authenticate']);
 Route::post('logout',[LoginController::class,'logout'])->middleware('auth');
+Route::get('penjualan',function(){return view('penjualan.index',["title"=>"penjualan"]);})->middleware('auth');
+Route::get('order',function(){return view('penjualan.orders',["title"=>"order"]);})->middleware('auth');
+Route::get('cetakReceipt',[CetakController::class,'receipt'])->name('cetakReceipt')->middleware('auth');
